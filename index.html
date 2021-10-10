@@ -30,15 +30,22 @@
       }
       .sixthheadline {
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
         font-family: Apple Chancery, cursive;
       }
+      .form1 {
+        border-style: solid;
+        text-align: center;
+      }
       .header {
+        padding: 1em;
+        border-style: double;
         margin-left: 1%;
+        margin-right: 1%;
         color: seashell;
         background-color: rgba(46, 49, 49, 1);
         font-family: verdana;
-        font-size: 15px;
+        font-size: 16px;
       }
       .main {
         display: grid;
@@ -55,19 +62,23 @@
         padding: 1em;
       }
       .nested1 {
+        border-style: double;
         font-family: Verdana;
         grid-column: 1/2;
         grid-row: 1/3;
       }
       .nested2 {
+        border-style: double;
         font-family: Verdana;
         grid-column: 2/3;
         grid-row: 1/2;
       }
       .nested3 {
+        border-style: double;
         font-family: Verdana;
       }
       .nested4 {
+        border-style: double;
         font-family: Verdana;
         grid-column: 2/3;
         grid-row: 2/4;
@@ -90,12 +101,29 @@
       .cross1 {
         float: right;
       }
+      .list1 {
+        float: left;
+      }
+      .list2 {
+        float: right;
+      }
+      .submitbutton {
+        font-family: 'Franklin Gothic Medium';
+        background-color: seashell;
+        border-radius: 50%;
+      }
+      .hotliquids {
+        float: right;
+      }
+      .coldliquids {
+        float: left;
+      }
     </style>
   </head>
   <body style="background-color: rgba(218, 223, 225, 1);">
-    <img class="cross" src="/Users/matasjankunas/Desktop/coding_bootcamp/github/images/final_cross.jpg"
+    <img class="cross" src="images/final_cross.jpg"
      alt="baltic happiness cross">
-    <img class="cross1" src="/Users/matasjankunas/Desktop/coding_bootcamp/github/images/final_cross.jpg"
+    <img class="cross1" src="images/final_cross.jpg"
      alt="baltic happiness cross">
       <h1 class="mainheadline">Matas Jankunas</h1>  
      <br>
@@ -103,10 +131,10 @@
         &nbsp; Learn CSS  &nbsp; Other Page
         <a class="linked"
         href="https://www.linkedin.com/in/matas-jankunas/">
-        Linkedin&nbsp;</a>
+        Linkedin</a>
          </p>
 
-     <h2 class ="secondheadline">My accomplishments</h2>
+     <h2 class ="secondheadline">All About Me</h2>
      <div class="main" style= color:seashell>
       <div class="nested1"> 
         <h3 class="thirdheadline">Important Info</h3>
@@ -125,11 +153,25 @@
         quidem perspiciatis exercitationem expedita ipsa optio?
       </div>
       <div class="nested2"> 
-        <h4 class="fourthheadline">Various Info</h4> 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Nisi, animi molestias ipsum aliquam ducimus nobis quae, 
-        excepturi dolor minima possimus similique sed soluta 
-        cumque ea dolorem recusandae? Dolore, non consequatur!
+        <h4 class="fourthheadline">Your Opinion Matters!</h4> 
+        <form class="form1" action="https://jankunasm.github.io/portfolio/">
+        <p>What do you think of my Website?
+          <br />
+          <br />
+          <input type="radio" name="opinion" value="Great"/>
+          Great
+          <input type="radio" name="opinion" value="Good"/>
+          Good
+          <input type="radio" name="opinion" value="Okay"/>
+          Okay
+          <input type="radio" name="opinion" value="Bad"/>
+          Bad
+          <input type="radio" name="opinion" value="Terrible"/>
+          Terrible
+          <input class ="submitbutton" type="submit" value="Submit"/>
+          
+        </p>
+        </form>
       </div>
       <div class="nested3"> 
         <h5 class="fifthheadline">Boilerplate Info</h5>
@@ -146,11 +188,30 @@
         assumenda debitis facilis dolorum pariatur, atque vitae 
         quidem perspiciatis exercitationem expedita ipsa optio?
       </div>
-      <div class="nested4"> <h6 class="sixthheadline">Bogus Info</h6>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Alias ut iste aliquam. Nisi quia saepe corrupti asperiores 
-        assumenda debitis facilis dolorum pariatur, atque vitae 
-        quidem perspiciatis exercitationem expedita ipsa optio?
+      <div class="nested4"> <h6 class="sixthheadline">List of My 
+        Favorite Liquids
+      </h6> 
+      <p class="coldliquids"><b>Cold Liquids</b>
+      </p>
+      <br>
+      <br>
+      <ul class="list1">
+        <li>Snapple Tea</li>
+        <li>Gutsy Vitamin Water</li>
+        <li>Unsweetened Black Tea</li>
+        <li>Coca Cola</li>
+        <li>La Croix</li>
+        <li>H<sub>2</sub>0</li>
+      </ul>
+      <p class="hotliquids"><b>Hot Liquids</b></p>
+      <ul class="list2">
+          <li>Apple Cider</li>
+          <li>Chai Tea</li>
+          <li>Hazelnut Cream Tea</li>
+          <li>Black Coffee</li>
+          <li>Green Tea</li>
+          <li>H<sub>2</sub>0</li>
+        </ul>
       </div>
         </div>
      </div>
