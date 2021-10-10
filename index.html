@@ -10,7 +10,7 @@
       }
       .secondheadline {
         text-align: center;
-        font-size: 30px;
+        font-size: 37px;
         font-family: Apple Chancery, cursive;
       }
       .thirdheadline {
@@ -84,7 +84,55 @@
         grid-row: 2/4;
       }
       .linked {
-        float: right;
+        float: right;  
+      }
+      .linked2 {
+        float: inline-end;
+      }
+      .linked3 {
+        float: inline-start;
+      }
+      .linked4 {
+        float: inline-start;
+      }
+      .linked5 {
+        float: inline-start;
+      }
+      .linked2:link {
+        color: lightskyblue;
+      }
+      .linked2:visited {
+        color: lightblue;
+      }
+      .linked2:hover {
+        color: teal;
+      }
+      .linked3:link {
+        color: lightskyblue;
+      }
+      .linked3:visited {
+        color: lightblue;
+      }
+      .linked3:hover {
+        color: teal;
+      }
+      .linked4:link {
+        color: lightskyblue;
+      }
+      .linked4:visited {
+        color: lightblue;
+      }
+      .linked4:hover {
+        color: teal;
+      }
+      .linked5:link {
+        color: lightskyblue;
+      }
+      .linked5:visited {
+        color: lightblue;
+      }
+      .linked5:hover {
+        color: teal;
       }
       .linked:link {
   color: lightskyblue;
@@ -101,16 +149,11 @@
       .cross1 {
         float: right;
       }
-      .list1 {
-        float: left;
-      }
-      .list2 {
-        float: right;
-      }
       .submitbutton {
         font-family: 'Franklin Gothic Medium';
-        background-color: seashell;
+        background-color: lightskyblue;
         border-radius: 50%;
+        font-size: 15px;
       }
       .hotliquids {
         float: right;
@@ -127,12 +170,19 @@
      alt="baltic happiness cross">
       <h1 class="mainheadline">Matas Jankunas</h1>  
      <br>
-      <p class="header"> &nbsp;Coding Temple &nbsp; Learn Html 
-        &nbsp; Learn CSS  &nbsp; Other Page
+      <div class="header"> <span>
         <a class="linked"
-        href="https://www.linkedin.com/in/matas-jankunas/">
-        Linkedin</a>
-         </p>
+        href="https://www.linkedin.com/in/matas-jankunas/">Linkedin</a>
+        <a class="linked2"
+        href="https://github.com/jankunasm">Github</a>
+        <a class="linked3"
+        href="https://codingtemple.com/">Coding Temple</a>
+        <a class="linked4"
+        href="https://www.w3schools.com/html/default.asp">Learn Html</a>
+        <a class="linked5"
+        href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+        </span>
+      </div>
 
      <h2 class ="secondheadline">All About Me</h2>
      <div class="main" style= color:seashell>
@@ -158,16 +208,16 @@
         <p>What do you think of my Website?
           <br />
           <br />
-          <input type="radio" name="opinion" value="Great"/>
-          Great
-          <input type="radio" name="opinion" value="Good"/>
-          Good
-          <input type="radio" name="opinion" value="Okay"/>
-          Okay
-          <input type="radio" name="opinion" value="Bad"/>
-          Bad
-          <input type="radio" name="opinion" value="Terrible"/>
-          Terrible
+          <input type="radio" name="opinion" value="Fantastic"/>
+          Fantastic
+          <input type="radio" name="opinion" value="Sublime"/>
+          Sublime
+          <input type="radio" name="opinion" value="Remarkable"/>
+          Remarkable
+          <input type="radio" name="opinion" value="Incredible"/>
+          Incredible
+          <br />
+          <br />
           <input class ="submitbutton" type="submit" value="Submit"/>
           
         </p>
@@ -190,11 +240,10 @@
       </div>
       <div class="nested4"> <h6 class="sixthheadline">List of My 
         Favorite Liquids
-      </h6> 
-      <p class="coldliquids"><b>Cold Liquids</b>
+      </h6>
+      <div class="coldliquids">
+      <p><b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Cold Liquids</b>
       </p>
-      <br>
-      <br>
       <ul class="list1">
         <li>Snapple Tea</li>
         <li>Gutsy Vitamin Water</li>
@@ -203,8 +252,10 @@
         <li>La Croix</li>
         <li>H<sub>2</sub>0</li>
       </ul>
-      <p class="hotliquids"><b>Hot Liquids</b></p>
-      <ul class="list2">
+      </div>
+      <div class="hotliquids">
+      <p><b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Hot Liquids</b></p>
+      <ul>
           <li>Apple Cider</li>
           <li>Chai Tea</li>
           <li>Hazelnut Cream Tea</li>
@@ -212,6 +263,7 @@
           <li>Green Tea</li>
           <li>H<sub>2</sub>0</li>
         </ul>
+        </div>
       </div>
         </div>
      </div>
